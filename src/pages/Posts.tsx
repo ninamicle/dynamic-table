@@ -3,7 +3,6 @@ import { getPostsQuery } from "../hooks/usePosts";
 import { Column } from "../types/table";
 
 const columns: Column[] = [
-  { key: "id", label: "Id", type: "string", width: "w-1/12", hasFilter: false },
   {
     key: "title",
     label: "Title",
@@ -34,6 +33,7 @@ export default function Posts() {
       isLoading={isFetchingNextPage}
       hasMore={hasNextPage}
       setFilter={setFilter}
+      isSelectable={true}
     />
   );
 }

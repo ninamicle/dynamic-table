@@ -26,6 +26,7 @@ export function TableRow<T extends TableData>({
               type="checkbox"
               checked={isSelected}
               onChange={() => onToggleSelect(item.id as number)}
+              className="w-6 h-6"
             />
           </span>
         </td>

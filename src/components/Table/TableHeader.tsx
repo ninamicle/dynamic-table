@@ -34,6 +34,7 @@ export const TableHeader = <T extends TableData>({
               ref={selectAllRef}
               checked={selectedRows.size === data.length}
               onChange={onSelectAll}
+              className="w-6 h-6"
             />
           </span>
         </th>
